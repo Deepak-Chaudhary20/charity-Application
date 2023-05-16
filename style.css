@@ -149,6 +149,9 @@ section .section-first{
     border-radius: 20px;
     border-left: 4px solid #3C63B0;
 }
+form{
+    z-index: 4;    
+}
 #about{
     border-bottom: 4px solid #EBFAFF;
 }
