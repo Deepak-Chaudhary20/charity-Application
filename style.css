@@ -44,7 +44,7 @@ nav a{
     padding: 8px 9px;
     border-radius: 9px;
     color: white;
-    width: 70px;
+    width: 100%;
 }
 
 #video{
@@ -323,7 +323,7 @@ input{
     padding: 5% 5% 5% 5%;
     display: flex;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     justify-content: center;
     align-items: center;
 }
@@ -425,6 +425,10 @@ input{
     }
     .footer{
         padding-bottom: 10%;
+    }
+    #aboutsection{
+        /* background-color: white;  */
+        width: 93% !important; 
     }
     /* .contact-form{
         width: 320px;
