@@ -430,6 +430,9 @@ input{
         /* background-color: white;  */
         width: 93% !important; 
     }
+    #team{
+        width: 100%;
+    }
     /* .contact-form{
         width: 320px;
     } */
