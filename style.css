@@ -211,7 +211,7 @@ form{
 }
 .lastsection img{
     width: 100%;
-    height: 300px;
+    height: 100%;
 }
 span{
     color: goldenrod;
@@ -319,18 +319,81 @@ input{
 }
 .footer{
     background-color: #3B62AE;
-    height: 100px;
+    /* height: 100px; */
     padding: 5% 5% 5% 5%;
     display: flex;
     color: white;
     font-size: 1.1rem;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+.footer-1{
+    width: 33%;
+    padding: 10px;
+    font-family: sans-serif;
+}
+.footer-2{
+    width: 33%;
+    padding: 10px;
+    font-family: sans-serif;
+}
+.footer-3{
+    width: 33%;
+    padding: 10px;
+    font-family: sans-serif;
+}
+#term-condition{
+    /* height: ; */
+    padding-top: 5%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    /* margin-top: 5%; */
 }
 
+.term-condition::before{
+    content: '';
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: 0;
+    background-color: rgb(249, 173, 173);
+    transform: scale(1);
+    animation: zooming 3s linear ease-in-out infinite;
+}
+
+@keyframes zooming{
+    0%{
+        transform: scale(3);
+
+    }
+}
+
+.term-condition{
+   position: relative;
+}
 /* Media query of header 
  */
-
+.term-condition h3{
+    font-size: 3rem;
+}
+.term-condition p{
+    font-size: 1.3rem;
+    font-family: sans-serif;
+}
+b{
+    font-size: 1.5rem;
+}
 @media  screen and (max-width: 873px){
     nav{
         position: absolute;
@@ -436,6 +499,16 @@ input{
     /* .contact-form{
         width: 320px;
     } */
+    .term-condition p{
+        font-size: 1rem;
+        font-family: sans-serif;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer div{
+        width: 100%;
+    }
 }
 /* Here the section first start  */
 
