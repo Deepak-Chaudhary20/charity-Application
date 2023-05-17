@@ -255,6 +255,44 @@ span{
 label{
     font-size: 1.2rem;
 }
+.money{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+.money-content{
+    text-align: center;
+    padding: 20px;
+}
+.money div{
+    z-index: 1;
+}
+.money::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0% 100% 100% 0% / 100% 0% 100% 0% ;
+    height: 300px;
+    width: 300px;
+    opacity: 0.3;
+    z-index: 0;
+    background-color: #3C63B0;
+}
+.money::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 100% 0% 100% 0% / 100% 100% 0% 0%;
+    height: 300px;
+    width: 300px;
+    opacity: 0.3;
+    z-index: 0;
+    background-color: #3C63B0;
+}
 .contact-form::after{
     content: '';
     position: absolute;
